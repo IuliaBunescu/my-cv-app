@@ -21,7 +21,7 @@ return (
                 <strong>{personal.dateOfBirth}</strong></p>
             <p> 
                 <FaEnvelope style={{ marginRight: '10px' }} /> 
-                <a href={`mailto:${personal.email}`}>{personal.email}</a></p>
+                <a href={`mailto:${personal.email}`} className="email-link">{personal.email}</a></p>
             <p> 
                 <FaLinkedin style={{ marginRight: '10px' }} /> 
                 <a href={personal.linkedIn} target="_blank" rel="noopener noreferrer">iulia-bunescu</a> </p>

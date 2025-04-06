@@ -152,3 +152,11 @@ text-decoration: underline;
 margin-top: 1rem;
 max-width: 60%;
 }
+
+.email-link {
+white-space: normal; 
+word-wrap: break-word; 
+word-break: break-all; 
+display: inline-block; 
+max-width: 100%; 
+}
