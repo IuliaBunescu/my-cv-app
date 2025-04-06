@@ -31,4 +31,4 @@ npm run dev
 
 ## 🔗 Live Demo
 
-Check out the live version here: [my-cv-app](https://my-cv-4664x6i4o-iuliabunescus-projects.vercel.app/experience)
+Check out the live version here: [my-cv-app](my-cv-7w3acb4w1-iuliabunescus-projects.vercel.app)
