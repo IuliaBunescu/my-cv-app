@@ -31,4 +31,4 @@ npm run dev
 
 ## 🔗 Live Demo
 
-Check out the live version here: [my-cv-app](https://my-cv-app-iota.vercel.app/about)
+Check out the live version here: [my-cv-app](https://my-cv-app-git-main-iuliabunescus-projects.vercel.app/about)
