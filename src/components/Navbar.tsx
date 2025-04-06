@@ -1,0 +1,16 @@
+import { Link } from 'react-router-dom';
+import './Navbar.css';  
+
+const Navbar: React.FC = () => {
+  return (
+    <nav>
+      <ul>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/experience">Experience</Link></li>
+        <li><Link to="/hobbies">Hobbies</Link></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;

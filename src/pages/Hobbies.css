@@ -1,0 +1,76 @@
+/* Hobbies page specific styling */
+.hobbies-page h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .hobbies-page p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Hobbies list styling */
+  .hobbies-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hobby-item {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Initially hide the items */
+    transform: translateX(-100px); /* Start from the left */
+    animation: slideIn 0.8s forwards; /* Apply the slide-in animation */
+  }
+  
+  .hobby-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+  }
+  
+  /* Hover effect */
+  .hobby-item:hover {
+    background-color: #fefcf6;
+    transform: scale(1.05);
+  }
+  
+  /* Keyframes for left-to-right slide-in */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px); /* Start from the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End in original position */
+    }
+  }
+  
+  /* Add a delay for each item to create a sequential effect */
+  .hobbies-list .hobby-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .hobbies-list .hobby-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .hobbies-list .hobby-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .hobbies-list .hobby-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+
+  .hobbies-list .hobby-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+ 
+  

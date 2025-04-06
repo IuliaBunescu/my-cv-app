@@ -1,0 +1,54 @@
+/* Global Styles */
+
+/* General Styles for the Body */
+body {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf0f4; /* Soft pinkish background */
+    color: black;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.5s ease-out; /* Fade-in effect for body */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #e91e63; /* Soft pink for links */
+    transition: color 0.3s ease; /* Smooth transition for link hover */
+}
+
+a:hover {
+    color: #c2185b; /* Darker pink on hover */
+    text-decoration: underline;
+}
+
+/* General List Styles */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Simple Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Page Layout (Shared) */
+.page {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the card effect */
+    border-radius: 8px;
+    animation: fadeIn 1s ease-out; /* Fade-in effect for page */
+}
+

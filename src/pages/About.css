@@ -1,0 +1,154 @@
+/* Header Styling for About Page */
+.about-page .name-and-info {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem; /* Space between the name and the general info */
+  }
+.about-page h1 {
+    font-size: 2.5rem; /* Adjusted font size for main header */
+    color: #333;
+    margin: 0;
+}
+
+.about-page h3 {
+    font-size: 1.5rem; /* Smaller size for sub-headers */
+    color: #c9184a; /* Soft pink for sub-header */
+}
+
+/* Paragraph and list styling */
+.about-page p, .about-page ul {
+    font-size: 1rem;
+    color: black; /* Light gray color for text */
+}
+
+/* Remove bullet points and add a vertical line for About page */
+.about-page ul {
+    padding-left: 0; /* Remove left padding to remove bullet points */
+    list-style-type: none; /* Ensure bullet points are removed */
+}
+
+.about-page li {
+    margin: 1.5rem 0; /* More space between list items */
+    padding-left: 1rem; /* Space before the line */
+    position: relative;
+    border-left: 3px solid transparent; /* Initially set the line to be transparent */
+    transition: border-color 0.3s ease; /* Smooth transition for the border color */
+}
+
+@keyframes drawLine {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%; /* Full height of the list item */
+    }
+}
+
+/* Use the animation on hover */
+.about-page li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%; /* Make sure the height is full */
+    background-color: #e91e63; /* Soft pink */
+    animation: drawLine 1s ease-out forwards; /* Draw the line from top to bottom */
+}
+
+/* Spacing between sections */
+.about-page h3 {
+    margin-top: 2rem; /* Add extra space before sub-headers */
+    margin-bottom: 1rem; /* Add space below sub-headers */
+}
+
+.about-page p {
+    margin-bottom: 1.5rem; /* Add some space below paragraphs */
+}
+
+/* Add more space between sections */
+.about-page ul {
+    margin-top: 1.5rem; /* Add more space above the list */
+}
+
+.about-page p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.general-info h1{
+    color: #e91e63;
+}
+
+/* Languages Section Styling */
+.about-page .languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between the pills */
+    margin-bottom: 2rem;
+  }
+  
+  .about-page .language-pill {
+    background-color: #ff4d6d; /* Soft pink background for the pill */
+    color: white;
+    padding: 0.5rem 1rem; /* Add padding for pill shape */
+    border-radius: 20px; /* Make it pill-shaped */
+    font-size: 1rem;
+    text-transform: capitalize; 
+    transition:  transform 0.3s ease;
+  }
+
+  .about-page .language-pill:hover {
+   transform: scale(1.1);
+   cursor: default;
+  }
+
+  /* Personal Projects Links Styling */
+.about-page .project-links {
+    margin-top: 1rem; /* Space above the project links */
+    display: flex;
+    gap: 1rem; /* Space between the links */
+  }
+  
+.about-page .project-link {
+    background-color: #ffb3c1; /* Soft pink background for the pill */
+    color: white;
+    padding: 0.5rem 1rem; /* Add padding for pill shape */
+    border-radius: 20px; /* Make it pill-shaped */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize; /* Ensure the text is capitalized */
+    text-decoration: none; /* Remove the default underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+.about-page .project-link:hover {
+    background-color: #ff8fa3; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+  }
+  
+/* General Info Styling */
+.about-page .general-info {
+    background-color: #fefcf6; /* Soft pink background */
+    padding: 1rem;
+    border-radius: 12px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+    width: 30%; /* Set a fixed width */
+    height: 80%;
+}
+
+.about-page .general-info p {
+font-size: 1rem;
+color: #800f2f;
+margin: 0.5rem 0;
+}
+
+
+.about-page .general-info a:hover {
+text-decoration: underline;
+}
+
+.about-page .bio {
+margin-top: 1rem;
+max-width: 60%;
+}

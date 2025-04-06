@@ -1,0 +1,36 @@
+/* Navbar Styles */
+nav {
+    padding: 0.1rem ; /* Smaller padding for a more compact navbar */
+    background-color: #c9184a; /* Soft pink background */
+    text-align: center; 
+    border-radius: 5px; /* Optional: rounded corners for a softer look */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex; 
+    gap: 2rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none; /* Remove underline by default */
+    transition: transform 0.3s ease; /* Transition only for transform */
+}
+
+nav a:hover {
+    color: white; /* Keep the same color */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+nav li:hover{
+    transform: scale(1.1); /* Slightly increase the size of the link */
+
+}
