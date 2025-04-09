@@ -148,6 +148,10 @@ margin: 0.5rem 0;
 text-decoration: underline;
 }
 
+.about-page .general-info:hover {
+    transform: scale(1.1);
+}
+
 .about-page .bio {
 margin-top: 1rem;
 max-width: 60%;
