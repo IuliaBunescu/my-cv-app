@@ -36,6 +36,7 @@
   .hobby-item:hover {
     background-color: #fefcf6;
     transform: scale(1.05);
+    cursor: default;
   }
   
   /* Keyframes for left-to-right slide-in */

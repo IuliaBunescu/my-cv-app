@@ -52,3 +52,25 @@ li {
     animation: fadeIn 1s ease-out; /* Fade-in effect for page */
 }
 
+/* Adding a laoding icon */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* adjust based on your layout */
+  }
+  
+  .loading-icon {
+    width: 60px;
+    height: 60px;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
